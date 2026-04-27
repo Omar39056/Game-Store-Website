@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Feedback</title>
+    <meta name="description" content="this is the most gamed games site,exclusive ,new and trending games.">
+    <link rel="stylesheet" href="feedback.css">
+     <script src="side bar button.js"></script>
+     <script src="search.js" defer></script>
+     <script src="feedback.js" defer></script>
+  </head>
+  <body>
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+    <header>
+      <div class="first">
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+        <div class="title">GXB Games</div>
+      </div>
+        <input type="text" class="search-box" placeholder="Search...">
+              <ul id="resultslist" class="search-results"></ul>
+      <div class="last">
+        <button class="login-btn">Login</button>
+        <button class="Signup-btn">Signup</button>
+      </div>
+
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="all cat.html">Category</a></li>
+      </ul>
+    </nav>
+ <!--side bar-->
+  <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+    <div class="page">
+      <form class="feedback-form">
+        <h2>Feedback</h2>
+        
+        <label for="name" class="labels">Name</label>
+        <input type="text" id="name" name="name" required class="inputs">
+    
+        <label for="email" class="labels">Email</label>
+        <input type="email" id="email" name="email" required class="inputs">
+    
+        <div class="options">
+            <input type="radio" id="comment" name="type" value="comment" class="inputs">
+            <label for="comment" class="labels">Comment on feedback</label><br>
+    
+            <input type="radio" id="feature" name="type" value="feature" class="inputs">
+            <label for="feature" class="labels">Feature recommendation</label>
+        </div>
+    
+        <label for="feedback" class="labels">Feedback</label>
+        <textarea id="feedback" name="feedback" rows="4" required class="inputs"></textarea>
+    
+        <button type="submit">Submit</button>
+    
+    </form>
+    </div>
+  </body>
+</html>

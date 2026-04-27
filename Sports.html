@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Categories</title>
+  <link rel="stylesheet" href="all cat.css">
+  <!-- Link to FontAwesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="side bar button.js"></script>
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+<div class="alr2s">
+<header>
+  <div class="sidebar-icon">☰</div>
+  <div class="title">GXB Games</div>
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Search...">
+          <ul id="resultslist" class="search-results"></ul>
+  </div>    
+  <button class="menu-icon" onclick="toggleSidebar()">Login</button>
+  <a href="signup.html"><button class="Signup-btn">Signup</button></a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="all cat.html">Category</a></li>
+  </ul> 
+</nav> 
+ <!--side bar-->
+<div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+
+</div>
+<main>
+  <h1 class="main-content">Sports</h1>
+
+  <div class="filter-buttons">
+    <button><a href="all cat.html">All</a></button>
+    <button><a href="Horror.html">Horror</a></button>
+    <button><a href="Action.html">Action</a></button>
+    <button><a href="Race.html">Race</a></button>
+    <button><a href="Sports.html">Sports</a></button>
+    <button><a href="shooter.html">Shooter</a></button>
+    <button><a href="simulator.html">Simulator</a></button>
+  </div>
+
+  <div class="photo-grid">
+    <div class="photo"><a href="fifa/game_page.html"><img src="fifa/fifa 1.jpg" alt="god"></a></div>
+    <div class="photo"><a href="pes/game_page.html"><img src="pes/pes 1.jpg" alt="uncharted"></a></div>
+    <div class="photo"><a href="nba/game_page.html"><img src="nba/nba 1.jpg" alt="days"></a></div>
+    <div class="photo"><a href="football manager/game_page.html"><img src="football manager/football manager 1.jpg" alt="assissan"></a></div>
+  </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="head1"><h4>Our Partners</h4><br></div>
+  <div class="Partners"><pre>
+    Rockstar Games
+    Ubisoft Games
+    Snappy Dog Games
+    Omar Nabil Games
+      </pre>
+  </div>
+  <div><h4 style="text-align: center; top: 3%;">Supported countries</h4></div>
+</footer>
+
+</body>
+</html>

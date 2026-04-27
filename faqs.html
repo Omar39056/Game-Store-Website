@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faqs</title>
+    <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
+    <script src="side bar button.js"></script>
+    <script src="search.js" defer></script>
+        <script src="faqs.css" defer></script>
+
+</head>
+<body>
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+    <header>
+    <div class="first">
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+        <div class="title">GXB Games</div>
+    </div>
+        <input type="text" class="search-box" placeholder="Search...">
+              <ul id="resultslist" class="search-results"></ul>
+    <div class="last">
+        <button class="login-btn">Login</button>
+        <button class="Signup-btn">Signup</button>
+    </div>
+
+    </header>
+
+    <nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="all cat.html">Category</a></li>
+    </ul>
+    </nav>
+ <!--side bar-->
+  <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+    <div class="page">
+        <div class="faq-card" onclick="fun(1)">
+            <div class="qhead">
+                <div class="faq-question">What's your return policy?</div>
+                <span class="material-symbols-outlined" id="ic1" style="transform: rotate(90deg);">chevron_right</span>
+            </div>
+            <div class="faq-answer" id="an1" style="display: none;">You can return any product within 30 days of purchase with a receipt.</div>
+        </div>
+
+        <div class="faq-card" onclick="fun(2)">
+            <div class="qhead">
+                <div class="faq-question">What's your return policy?</div>
+                <span class="material-symbols-outlined" id="ic2" style="transform: rotate(90deg);">chevron_right</span>
+            </div>            
+            <div class="faq-answer" id="an2" style="display: none;">Once shipped, you'll receive an email with a tracking number and link.</div>
+        </div>
+
+        <div class="faq-card" onclick="fun(3)">
+            <div class="qhead">
+                <div class="faq-question">What's your return policy?</div>
+                <span class="material-symbols-outlined" id="ic3" style="transform: rotate(90deg);">chevron_right</span>
+            </div>
+            <div class="faq-answer" id="an3" style="display: none;">Yes, we ship to over 50 countries worldwide. Shipping costs vary.</div>
+        </div>
+    </div>
+    <script src="faqs.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GXB Games</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="side bar button.js"></script>
+  <script src="arrow buttons.js"></script>
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+   <div class="container">
+    <div class="header">
+      <header>
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+        <div class="title">GXB Games</div>
+        <div class="search-container">
+          <input type="text" class="search-box" placeholder="Search...">
+          <ul id="resultslist" class="search-results"></ul>
+        </div>
+
+       <a href="login.html"><button class="login-btn">Login</button></a>
+        <a href="signup.html"><button class="Signup-btn">Signup</button></a>
+      </header>
+  
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="all cat.html">Category</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="trending-new-liked">
+        <div class="trending">
+          <h2>Trending</h2>
+        <Div class="gallery-container">
+          <button class="scroll-button left" onclick="scrollt()">&#10094;</button>
+          <div class="game-grid" id="Gallery">
+            <div class="game-card"><a class="test"  href="dead by daylight/game_page.html"><img src="dead by daylight/dead by daylight.jpeg" alt="dead"></a></div>
+            <div class="game-card"><a class="test" href="fifa/game_page.html"><img src="fifa/fifa 1.jpg" alt="fifa" width="100%" height="auto"></a></div>
+            <div class="game-card"><a class="test" href="counter strike/game_page.html"><img src="counter strike/counter strike 1.jpg" alt="cs"></div>
+            <div class="game-card"><a class="test" href="the evil within/game_page.html"><img src="the evil within/the evil within 1.jpg" alt="the evil" ></a></div>
+            <div class="game-card"><a class="test" href="grid 2/game_page.html"><img src="grid 2/grid2.jpeg" alt="grid" ></a></div>
+            <div class="game-card"><a class="test" href="gtav/game_page.html"><img src="gtav/images.jpeg" alt="gtav" width="100%" height="auto"></a></div>
+            <div class="game-card"><a class="test" href="resdient evil/game_page.html"><img src="resdient evil/resident evil1.jpg" alt="dead" height="150px"></a></div>
+            <div class="game-card"><a class="test" href="god of war/game_page.html"><img src="god of war/god of war 1.jpg" alt="dead"></a></div>
+          </div>
+          <button class="scroll-button right" onclick="scrollr()">&#10095;</button>
+        </Div>
+        </div>
+     
+      </section>
+
+      <section class="new-section">
+        <h2>New</h2>
+        <div class="gallery-container">
+          <button class="scroll-button left" onclick="scrollleft()">&#10094;</button> 
+        <div class="game-grid" id="gameGallery1">
+          <div class="game-card"><a class="test" href="assissan creed/game_page.html"><img src="assissan creed/Assassins Creed Origins 1.jpg" alt="dead"></a></div>
+          <div class="game-card"><a class="test" href="uncharted/game_page.html"><img src="uncharted/uncharted 1.jpg" alt="fifa" ></a></div>
+          <div class="game-card"><a class="test" href="battlefield/battlefield.html"><img src="battlefield/Battlefield 1.jpg" alt="cs"></div>
+          <div class="game-card"><a class="test" href="horizon/game_page.html"><img src="horizon/horizion 1.jpg" alt="the evil"></a></div>
+          <div class="game-card"><a class="test" href="outlast/game_page.html"><img src="outlast/outlast 1.jpg" alt="grid" ></a></div>
+          <div class="game-card"><a class="test" href="nba/game_page.html"><img src="nba/nba 1.jpg" alt="gtav"></a></div>
+          <div class="game-card"><a class="test" href="pes/game_page.html"><img src="pes/pes 1.jpg" alt="dead"></a></div>
+          <div class="game-card"><a class="test" href="neeed for speed/game_page.html"><img src="neeed for speed/need for speed 1.jpg" alt="dead" height="120%"></a></div>
+        </div>
+        <button class="scroll-button right" onclick="scrollright()">&#10095;</button>
+        </div>
+      </section>
+      <section class="liked-section">
+        <h2>Most Liked</h2>
+        <div class="gallery-container">
+          <button class="scroll-button left" onclick="scrolls()">&#10094;</button> 
+        <div class="game-grid" id="gameGallery2">
+          <div class="game-card"><a class="test" href="days gone/game_page.html"><img src="days gone/days gone 1.jpg" alt="dead"></a></div>
+          <div class="game-card"><a class="test" href="asphalet/game_page.html"><img src="asphalet/asphalt 1.jpg" alt="fifa" ></a></div>
+          <div class="game-card"><a class="test" href="call of duty/game_page.html"><img src="call of duty/call of duty.jpg" alt="cs"></div>
+          <div class="game-card"><a class="test" href="code of war/game_page.html"><img src="code of war/code of war 1.jpg" alt="the evil"></a></div>
+          <div class="game-card"><a class="test" href="internet cafe/game_page.html"><img src="internet cafe/internet cafe 1.jpg" alt="grid" ></a></div>
+          <div class="game-card"><a class="test" href="supermarket/game_page.html"><img src="supermarket/supermarket1.jpg" alt="gtav"></a></div>
+          <div class="game-card"><a class="test" href="football manager/game_page.html"><img src="football manager/football manager 1.jpg" alt="dead"></a></div>
+          <div class="game-card"><a class="test" href="the evil within/game_page.html"><img src="the evil within/the evil within 1.jpg" alt="dead" height="120%"></a></div>
+        </div>
+        <button class="scroll-button right" onclick="scrolly()">&#10095;</button>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+  <!--side bar-->
+  <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+   </div>
+   
+   <div class="footer-banner">
+  <div class="main-text">
+    <h1>BEYOND YOUR LIMIT WITH US!</h1>
+    <div class="sub-text">ENJOY!</div>
+
+    <footer class="footer-bottom">
+      <nav class="footer-links">
+        <a href="home.html">GXB Games</a>
+      </nav>
+    </footer>
+    
+  </div>
+  
+  <div class="social-box">@socialmedia</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --input-bg: #1e1e1e;
+  --accent-color: #00ffff;
+}
+body {
+  background: url("it backgroud.avif") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color); 
+  flex-direction: column;
+  display: flex ;
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a00ff;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.search-box {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.login-btn,
+.Signup-btn {
+  background-color: #7b00ff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-container {
+  margin-top: 80px;
+}
+
+nav {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.page {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  background-color: white;
+}
+.dcontainer {
+  width: 500px;
+  background-color: var(--input-bg);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.texts {
+  padding: 20px;
+  color: #000000;
+}
+
+#usrn {
+  color: #00ffff;
+}
+.dtexts {
+  padding: 20px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Header styling */
+.main-header {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+}
+
+.title-gxb {
+  color: #b100ff;
+  font-size: 20px;
+}
+
+.title-games {
+  color: #9900ff;
+  font-size: 18px;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.search-box {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+  background-color: #9900ff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #b100ff;
+}
+.nav-container {
+  margin-top: 80px; /* ensure it clears the header */
+}

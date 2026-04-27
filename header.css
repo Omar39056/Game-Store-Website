@@ -1,0 +1,93 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+}
+
+/* Full width wrapper */
+.container {
+    width: 100%;
+}
+
+/* Header layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Title centered with flex grow */
+.title {
+    transform: translate(-280px, 0px); 
+    flex-grow: 1;
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a00ff;
+    text-shadow: 3px 3px 3px rgba(233,130,238,0.486);
+}
+
+/* Search box aligned better */
+.search-container {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.search-box {
+    transform: translate(-420px, 0px); 
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+/* Buttons */
+.login-btn, .Signup-btn {
+    background-color: #7b00ff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Nav bar under header */
+nav {
+    position: fixed;
+    top: 70px; /* just below header */
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 999;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #1e39c2;
+    color: #000;
+}

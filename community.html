@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - GXB Games</title>
+  <link rel="stylesheet" href="comunity.css">
+ <script src="side bar button.js"></script>
+ <script src="search.js" defer></script>
+</head>
+<body class="community-page"> 
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+  <header>
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    <div class="title">GXB Games</div>
+    <div class="search-container">
+      <input type="text" class="search-box" placeholder="Search...">
+            <ul id="resultslist" class="search-results"></ul>
+    </div>
+    <a href="login.html"><button class="login-btn">Login</button></a>
+    <a href="signup.html"><button class="Signup-btn">Signup</button></a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="all cat.html">Category</a></li>
+    </ul>
+  </nav>
+ 
+  <section class="form-container">
+    <h2>Broadcasts</h2>
+    <div class="broadcasts-container">
+      <div class="broadcast-box">
+        <div class="broadcast-image-container">
+          <input type="radio" name="slider" id="slide-1" checked>
+          <input type="radio" name="slider" id="slide-2">
+          <input type="radio" name="slider" id="slide-3">
+          
+          <div class="broadcast-images">
+            <div class="broadcast-image">
+              <img src="broadcast1.jpg" alt="Broadcast 1">
+            </div>
+            <div class="broadcast-image">
+              <img src="broadcast2.jpg" alt="Broadcast 2">
+            </div>
+            <div class="broadcast-image">
+              <img src="broadcast3.jpg" alt="Broadcast 3">
+            </div>
+          </div>
+        </div>
+        <div class="broadcast-info">  
+          <p>Broadcast 1</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Latest News</h2>
+    <div class="news-container">
+      <div class="news-box">
+        <div class="news-image">
+          <img src="news1.jpg" alt="News 1">
+        </div>
+        <div class="news-info">
+          <p>New Game Update: Features</p>
+        </div>
+      </div>
+      <div class="news-box">
+        <div class="news-image">
+          <img src="news2.jpg" alt="News 2">
+        </div>
+        <div class="news-info">
+          <p>Upcoming Event: Gaming Tournament</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!--side bar-->
+   <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GXB Games</title>
+  <meta name="description" content="this is the most gamed games site,exclusive ,new and trending games.">
+  <link rel="stylesheet" href="support.css">
+  <script src="side bar button.js"></script>
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <header>
+
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+  <div class="title">GXB Games</div>
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Search...">
+          <ul id="resultslist" class="search-results"></ul>
+  </div>    
+  <button class="login-btn">Login</button>
+  <a href="signup.html"><button class="Signup-btn">Signup</button></a>
+</header>
+ 
+<nav> 
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="all cat.html">Category</a></li>
+  </ul>
+</nav>
+ <!--side bar-->
+ <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+
+  <div class="type">
+    <h1 class="h1">
+      SUPPORT  FORM
+    </h1>
+  
+  
+<form action="php" method="post"><div>
+  <label for ="fname" class="labels">First name:</label>
+  <input class="fname" type="text" id="fname"name="fname"placeholder="first name" required> 
+</div>
+<br>
+<div>
+  <label for ="lname" class="labels">Last name:</label>
+  <input  class="lname"type="text" id= "lname" name="lname" placeholder="last name" required>  
+</div>
+<br>
+<div>
+ <label for="email" class="labels"> Email:</label>
+ <input class="email" type="email" id="email"name="email"placeholder="email"required> 
+ </div> <br>
+ <div>
+  <label class="labels">
+    CATEGORY:
+  </label class="labels"></div><div class="types">
+    <div class="acc">
+      <label class="labels">ACCOUNT</label>
+      <input type="radio" name="CATEGORY"required>
+    </div>
+    <div class="dat">
+      <label class="labels">DATA</label>
+      <input type="radio" name="CATEGORY">
+    </div>
+    <div class="abt">
+      <label class="labels">ABOUT GAME</label>
+      <input type="radio" name="CATEGORY">
+    </div>
+    <div class="oth">
+      <label class="labels">OTHER</label>
+      <input type="radio" name="CATEGORY">
+    </div>
+
+  </div><br><div>
+  <label for =" DESCRIPTION" class="labels">DESCRIPTION :</label><div>
+<textarea  
+class="des"
+    id="DESCRIPTION" 
+    name="DESCRIPTION" 
+    placeholder="describe your issue" 
+    required 
+    style="width: 98%; height: 150px; resize: vertical;">
+</textarea>
+  </div></div>
+  <div class="text">
+ <input type="submit">
+ <input type="reset">   
+  </div></div></div>
+ 
+ 
+</form>
+</body>
+</html>

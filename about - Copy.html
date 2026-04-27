@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GXB Games</title>
+  <meta name="description" content="this is the most gamed games site, exclusive, new, and trending games.">
+ <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="about.css">
+  <script src="side bar button.js"></script>
+  <script src="search.js" defer></script>
+</head>
+<body> 
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <header> 
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>  
+    <div class="title">GXB Games</div>
+   <div class="search-container">
+          <input type="text" class="search-box" placeholder="Search...">
+          <ul id="resultslist" class="search-results"></ul>
+        </div>
+ 
+    <button class="login-btn">Login</button>
+    <a href="signup.html"><button class="Signup-btn">Signup</button></a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="all cat.html">Category</a></li>
+    </ul>
+  </nav>
+   <!--side bar-->
+   <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+
+
+  <main class="about-us">
+    <div class="container">
+      <section class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>GXB Games</strong><br> your ultimate destination for thrilling gaming experiences! 🎮</p>
+        <p>At GXB Games, we are passionate about delivering exclusive, trending,<br> and innovative games. Our goal is to create a vibrant, exciting community where players of all levels can explore new adventures.</p>
+        <p>From action-packed missions to mind-bending puzzles — GXB Games is here to power your passion for gaming!</p>
+      </section>
+
+      <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+          <div class="member">
+            <h3>Omar Nabil</h3>
+            <p>Founder & CEO</p>
+          </div>
+          <div class="member">
+            <h3>Aisha yasser</h3>
+            <p>Lead Game Developer</p>
+          </div>
+          <div class="member">
+            <h3>Habiba</h3>
+            <p>Community Manager</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 GXB Games. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="abtlang.js"></script>
+
+</body>
+</html>
+

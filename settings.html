@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GXB Games - Settings</title>
+  <link rel="stylesheet" href="settings.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="side bar button.js"></script>
+  <script src="search.js" defer></script>
+  <script defer src="translate.js"></script>
+  <script defer src="theme-switcher.js"></script>
+</head>
+<body>
+<div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+  <header>
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    <div class="title">GXB Games</div>
+    <div class="search-container">
+      <input type="text" class="search-box" placeholder="Search...">
+      <ul id="resultslist" class="search-results"></ul>
+    </div>    
+    <button class="login-btn">Login</button>
+    <a href="signup.html"><button class="signup-btn">Signup</button></a>
+    
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="all-cat.html">Category</a></li>
+    </ul>
+  </nav>
+<!--side bar-->
+  <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About us</a>
+    <a href="why choose us.html">Why choose us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="community.html">Community</a>
+    <a href="library.html">Library</a>
+    <a href="support.html">Support</a>
+    <a href="faqs.html">FAQ asked</a>
+    <a href="settings.html">settings</a>
+  </div>
+  <section class="settings">
+    <h2>SETTINGS</h2>
+    <div class="settings-box">
+      <a href="profile.html"><button class="profile-btn">Go to my profile</button></a>
+      <div class="form-group">
+        <label for="language" class="morsy">Language</label>
+
+
+        <select id="language" onchange="switchtoen()">
+          <option disabled selected>Enter language</option>
+          <option value="english" onclick="">English</option>
+          <option value="arabic" onclick="">Arabic</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="profile-visibility" class="morsy">Profile Visibility *</label>
+        <select id="profile-visibility">
+          <option disabled selected>Enter your visibility</option>
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+          <option value="friends-only">Friends Only</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="game-history-visibility" class="morsy">Game History Visibility *</label>
+        <select id="game-history-visibility" >
+          <option disabled selected>Enter visibility</option>
+          <option value="everyone">Everyone</option>
+          <option value="only-me">Only Me</option>
+          <option value="friends">Friends</option>
+        </select>
+      </div>
+      <a href="login.html"><button class="logout-btn">Log out</button></a>
+      <button style="margin-left: 205px;" id="themeToggle" onclick="switchTheme()" class="theme-button">
+      Switch to Dark Mode
+    </button>
+    </div>
+    
+  </section>
+
+</body>
+</html>
